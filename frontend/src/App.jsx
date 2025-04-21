@@ -4,10 +4,12 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Contact from "./pages/Contact";
 import MyProfile from "./pages/MyProfile";
-import MyAppointment from "./pages/MyAppointment";
+import Appointment from "./pages/Appointment";
+import MyAppointments from "./pages/MyAppointments";
 import Navbar from "./components/Navbar";
 import Doctors from "./pages/Doctors";
 import About from "./pages/About";
+import Footer from "./Footer";
 const App = () => {
   return (
     <div className="mx-4 sm:mx-[10%]">
@@ -20,9 +22,10 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/my-profile" element={<MyProfile />} />
-        <Route path="/my-appointments" element={<MyAppointment />} />
-        <Route path="/appointement/:doc" element={<MyAppointment />} />
+        <Route path="/my-appointments" element={<MyAppointments />} />
+        <Route path="/appointment/:docId" element={<Appointment />} />
       </Routes>
+      <Footer />
     </div>
   );
 };

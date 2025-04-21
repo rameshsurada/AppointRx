@@ -1,6 +1,9 @@
 import React from "react";
 import { assets } from "../assets/assets_frontend/assets";
+import SpecialityMenu from "./SpecialityMenu";
+import { useNavigate } from "react-router-dom";
 const Header = () => {
+  const navigate = useNavigate();
   return (
     <div className="flex flex-col md:flex-row flex-wrap bg-primary rounded-lg px-6 py-10 md:px-10 lg:px-20">
       {/* left side section  */}
@@ -19,8 +22,12 @@ const Header = () => {
           </p>
         </div>
         <a
-          href="#speciality"
-          className="flex items-center gap-2 bg-white px-8 py-3 rounded-full text-gray-600 text-sm m-auto md:m-0 hover:scale-105 transition-all duration-300"
+          onClick={() => {
+            navigate("/doctors");
+            scrollTo(0, 0);
+          }}
+          href="#specialityMenu"
+          className=" cursor-pointer flex items-center gap-2 bg-white px-8 py-3 rounded-full text-gray-600 text-sm m-auto md:m-0 hover:scale-105 transition-all duration-300"
         >
           {" "}
           Book appointment <br />
