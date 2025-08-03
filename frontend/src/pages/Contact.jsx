@@ -22,7 +22,7 @@ const Contact = () => {
             Hyderabad, Telengana
           </p>
           <p className="text-gray-500">
-            Tel: (415) 555‑0132 <br />
+            Tel: (999) 555‑1234 <br />
             Email: contact@appointrx.com
           </p>
         </div>

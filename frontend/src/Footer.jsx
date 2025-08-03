@@ -1,5 +1,6 @@
 import React from "react";
 import { assets } from "./assets/assets_frontend/assets";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="md:mx-10">
@@ -11,19 +12,18 @@ const Footer = () => {
           </p>
           <p className="w-full md:w-2/3 text-gray-600 leading-6">
             {" "}
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident
-            accusantium quisquam molestiae aperiam quis mollitia impedit non,
-            eius in sunt porro sint voluptatum rerum expedita aspernatur numquam
-            suscipit, nulla quae.
+            Easily book doctor appointments, manage your health records, and
+            stay on top of your care—all in one place. We’re here to make your
+            healthcare experience faster, easier, and more convenient.
           </p>
         </div>
         {/* center section */}
         <div>
           <p className="text-xl font-medium mb-5"> COMPANY</p>
           <ul className="flex flex-col gap-2 text-gray-600">
-            <li>Home</li>
-            <li>About us</li>
-            <li>Contact us</li>
+            <Link to="/">Home</Link>
+            <Link to="/about">About us</Link>
+            <Link to="/contact">Contact us</Link>
             <li>Privacy policy</li>
           </ul>
         </div>
@@ -31,8 +31,8 @@ const Footer = () => {
         <div>
           <p className="text-xl font-medium mb-5"> GET IN TOUCH</p>
           <ul className="flex flex-col gap-2 text-gray-600">
-            <li>+1 211-456-7227</li>
-            <li>appointrx@gmail.com</li>
+            <li>+91-99999-55555</li>
+            <li>contact@appointrx.com</li>
           </ul>
         </div>
       </div>
