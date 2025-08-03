@@ -22,6 +22,9 @@
 🌐 Live Demo
 Check out the live deployed app here: https://appoint-rx.vercel.app/
 
+![Screenshot 2025-08-03 at 11 20 05 AM](https://github.com/user-attachments/assets/25341a94-3419-4f83-a0d7-4aaf3fc57e35)
+
+
 ## 🔮 Future Enhancements
 
 - Search doctors by location or hospital
